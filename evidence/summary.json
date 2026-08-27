@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "decision": "D2-exit-blocked",
+  "workflowState": "SELF_TEST",
+  "gitSha": "4df4e7657c63fd674f29407347232a63e0813f63",
+  "artifactSha256": "51f5a6802919c11a2c59fdd11ac3f968199ad77039eba9240f2a106e3d94c5cc",
+  "dataManifestSha256": "d32cc01deb6d54ef942e101b7be602b9f260061634a7d6dc48c9ae153202d4ca",
+  "automated": {
+    "typecheck": "pass",
+    "unit": "21/21",
+    "mobileE2E": "10/10",
+    "build": "pass"
+  },
+  "requirements": {
+    "pass": 9,
+    "blocked": 3,
+    "fail": 0
+  },
+  "blockers": [
+    {
+      "requirement": "LAB-REQ-001",
+      "reason": "NET-MOBILE-4G and physical target-device P95 evidence is not available."
+    },
+    {
+      "requirement": "LAB-REQ-008",
+      "reason": "Four-tier physical-device FPS, Worker step, touch latency, and memory evidence is not available."
+    },
+    {
+      "requirement": "LAB-REQ-011",
+      "reason": "Installed iOS and Android offline-restart evidence is not available."
+    }
+  ]
+}
