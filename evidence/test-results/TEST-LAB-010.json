@@ -5,9 +5,9 @@
   "priority": "P1",
   "stageGate": "D2",
   "status": "pass",
-  "gitSha": "4df4e7657c63fd674f29407347232a63e0813f63",
-  "artifactSha256": "51f5a6802919c11a2c59fdd11ac3f968199ad77039eba9240f2a106e3d94c5cc",
-  "dataManifestSha256": "d32cc01deb6d54ef942e101b7be602b9f260061634a7d6dc48c9ae153202d4ca",
+  "gitSha": "4eedef4f975c5c052c2d4d13467ea85d4a4e0255",
+  "artifactSha256": "76a691475edaad437eb205f83625c0e5560ad2f3bc7e094306f38a499234067b",
+  "dataManifestSha256": "ca31dcd7408f89175c748ddb54ad577008755a150c5244e84ccc185d916be542",
   "environment": {
     "id": "ENV-CI+PW-MOBILE",
     "note": "Vitest contract plus Pixel 7/iPhone 12 Playwright path."
@@ -19,7 +19,7 @@
   "evidence": [
     {
       "uri": "tests/e2e/weird-matter-lab.spec.ts",
-      "sha256": "bae12242367797af741bb4b38643694b2c64ca9822aef08f58da66b6778b5798"
+      "sha256": "4b79de66e46737328806cedc41d0fa5012e32be2eddd3ec14021984804addf20"
     }
   ],
   "startedAt": "2026-08-27T13:13:34.000Z",
