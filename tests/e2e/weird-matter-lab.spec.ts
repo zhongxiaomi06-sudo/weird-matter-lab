@@ -19,6 +19,10 @@ test('TEST-LAB-MOBILE-001 completes the first experiment without overflow', asyn
 
 test('TEST-LAB-CONTENT-001 exposes 30 challenges and a searchable 72-material atlas', async ({ page }) => {
   await page.getByRole('button', { name: 'Challenges', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Watch matter misbehave.' })).toBeVisible();
+  await expect(page.locator('.matter-reels video')).toHaveCount(3);
+  await expect(page.locator('.matter-reels video').first()).toHaveAttribute('playsinline', '');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBeLessThanOrEqual(1);
   await expect(page.locator('.challenge-grid > button')).toHaveCount(30);
   await page.getByRole('button', { name: 'Matter atlas', exact: true }).click();
   await expect(page.locator('.atlas-grid > article')).toHaveCount(72);
