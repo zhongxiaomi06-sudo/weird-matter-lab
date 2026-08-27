@@ -5,8 +5,8 @@
   "priority": "P0",
   "stageGate": "D2",
   "status": "pass",
-  "gitSha": "4eedef4f975c5c052c2d4d13467ea85d4a4e0255",
-  "artifactSha256": "76a691475edaad437eb205f83625c0e5560ad2f3bc7e094306f38a499234067b",
+  "gitSha": "8b9e2c9501fc489f95638af4b5803192b13fdbe2",
+  "artifactSha256": "e510c0f6b3f569cb6de92e679ade7da0ca8532be7e7584a75e9fb4d28b2df0fe",
   "dataManifestSha256": "ca31dcd7408f89175c748ddb54ad577008755a150c5244e84ccc185d916be542",
   "environment": {
     "id": "ENV-CI+PW-MOBILE",
