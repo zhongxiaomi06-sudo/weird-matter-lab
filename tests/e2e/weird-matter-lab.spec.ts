@@ -18,9 +18,9 @@ test('TEST-LAB-MOBILE-001 completes the first experiment without overflow', asyn
 });
 
 test('TEST-LAB-CONTENT-001 exposes 30 challenges and a searchable 72-material atlas', async ({ page }) => {
-  await page.getByRole('button', { name: 'Challenges 30' }).click();
+  await page.getByRole('button', { name: 'Challenges', exact: true }).click();
   await expect(page.locator('.challenge-grid > button')).toHaveCount(30);
-  await page.getByRole('button', { name: 'Matter atlas 72' }).click();
+  await page.getByRole('button', { name: 'Matter atlas', exact: true }).click();
   await expect(page.locator('.atlas-grid > article')).toHaveCount(72);
   await page.getByRole('textbox', { name: 'Search materials' }).fill('water');
   await expect(page.locator('.atlas-grid > article')).toHaveCount(1);
@@ -29,10 +29,15 @@ test('TEST-LAB-CONTENT-001 exposes 30 challenges and a searchable 72-material at
 
 test('TEST-LAB-RECOVERY-001 saves and restores a valid local experiment', async ({ page }) => {
   await page.locator('canvas').click({ position: { x: 90, y: 60 } });
-  await page.getByRole('button', { name: 'Ⅱ Pause' }).click();
-  await page.getByRole('button', { name: 'Save' }).click();
+  await page.getByRole('button', { name: 'Pause simulation' }).click();
+  await page.getByRole('button', { name: 'Open lab notebook' }).click();
+  await page.getByRole('button', { name: 'Save experiment' }).click();
+  await page.getByRole('button', { name: 'Close lab notebook' }).click();
   await expect(page.getByText('Experiment saved on this device.')).toBeVisible();
-  await page.getByRole('button', { name: 'Clear' }).click();
-  await page.getByRole('button', { name: 'Restore' }).click();
+  await page.getByRole('button', { name: 'Open lab notebook' }).click();
+  await page.getByRole('button', { name: 'Clear experiment' }).click();
+  await page.getByRole('button', { name: 'Open lab notebook' }).click();
+  await page.getByRole('button', { name: 'Restore experiment' }).click();
+  await page.getByRole('button', { name: 'Close lab notebook' }).click();
   await expect(page.getByText('Last valid experiment restored.')).toBeVisible();
 });

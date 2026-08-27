@@ -4,3 +4,5 @@ LAB-RENDER-001	code	project-authored://css-material-renderer	1	MIT	approved-fixt
 LAB-FONT-001	font	system-font-stack://local	1	SYSTEM	approved-fixture	user	2026-08-27
 LAB-CONTENT-001	data	project-authored://weird-matter-lab/catalog	1	MIT	engineering-approved	automated-content-gate	2026-08-27
 LAB-OG-001	image	project-generated://imagegen/weird-matter-social-card	1	PROJECT-GENERATED	engineering-approved	visual-qa	2026-08-27
+LAB-HERO-002	image	project-generated://imagegen/matter-specimens-v2	2	PROJECT-GENERATED	engineering-approved	visual-qa	2026-08-27
+LAB-HERO-002-WEB	image	project-derived://LAB-HERO-002/webp-q86	2	PROJECT-GENERATED	engineering-approved	asset-optimization	2026-08-27
