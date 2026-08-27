@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { CHALLENGES, MATERIALS, SCENES, TOOLS, getMaterial, type Challenge } from './content';
 import { ENGINE_VERSION, GRID_HEIGHT, GRID_WIDTH, makeSave, sanitizeRemix, validateSave, type LabCommand, type WorldSummary } from './lab-core';
 import { eazoRuntime } from './eazo';
-import matterSpecimens from '../content/matter-specimens-v2.webp';
+import matterSpecimens from './assets/matter-specimens-v2.webp';
 
 type View = 'lab' | 'challenges' | 'atlas';
 type Notice = { kind: 'good' | 'warn'; text: string } | null;
