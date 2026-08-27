@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "testId": "TEST-LAB-008",
+  "bindingId": "LAB-REQ-008",
+  "priority": "P0",
+  "stageGate": "D2",
+  "status": "blocked",
+  "gitSha": "4df4e7657c63fd674f29407347232a63e0813f63",
+  "artifactSha256": "51f5a6802919c11a2c59fdd11ac3f968199ad77039eba9240f2a106e3d94c5cc",
+  "dataManifestSha256": "d32cc01deb6d54ef942e101b7be602b9f260061634a7d6dc48c9ae153202d4ca",
+  "environment": {
+    "id": "ENV-EVIDENCE-GAP",
+    "note": "Four-tier physical-device FPS, Worker step, touch latency, and memory evidence is not available."
+  },
+  "runner": {
+    "name": "vitest+playwright",
+    "version": "4.1.11+1.62.1"
+  },
+  "evidence": [
+    {
+      "uri": "apps/weird-matter-lab/src/lab-core.test.ts",
+      "sha256": "c110104107b77dbf3764c11f26f59933430b2a27c41d192c8e55ea4a80377f58"
+    }
+  ],
+  "startedAt": "2026-08-27T13:13:34.000Z",
+  "finishedAt": "2026-08-27T13:15:10.000Z"
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "testId": "TEST-LAB-009",
+  "bindingId": "LAB-REQ-009",
+  "priority": "P0",
+  "stageGate": "D2",
+  "status": "pass",
+  "gitSha": "4df4e7657c63fd674f29407347232a63e0813f63",
+  "artifactSha256": "51f5a6802919c11a2c59fdd11ac3f968199ad77039eba9240f2a106e3d94c5cc",
+  "dataManifestSha256": "d32cc01deb6d54ef942e101b7be602b9f260061634a7d6dc48c9ae153202d4ca",
+  "environment": {
+    "id": "ENV-CI+PW-MOBILE",
+    "note": "Vitest contract plus Pixel 7/iPhone 12 Playwright path."
+  },
+  "runner": {
+    "name": "vitest+playwright",
+    "version": "4.1.11+1.62.1"
+  },
+  "evidence": [
+    {
+      "uri": "tests/e2e/weird-matter-lab.spec.ts",
+      "sha256": "bae12242367797af741bb4b38643694b2c64ca9822aef08f58da66b6778b5798"
+    }
+  ],
+  "startedAt": "2026-08-27T13:13:34.000Z",
+  "finishedAt": "2026-08-27T13:15:10.000Z"
+}
