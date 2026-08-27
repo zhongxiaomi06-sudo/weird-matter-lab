@@ -1,0 +1,6 @@
+assetId	assetType	sourceUrl	sourceVersion	licenseId	status	reviewer	reviewedAt
+LAB-FIXTURE-001	data	project-authored://worker-simulation-fixture	1	MIT	approved-fixture	user	2026-08-27
+LAB-RENDER-001	code	project-authored://css-material-renderer	1	MIT	approved-fixture	user	2026-08-27
+LAB-FONT-001	font	system-font-stack://local	1	SYSTEM	approved-fixture	user	2026-08-27
+LAB-CONTENT-001	data	project-authored://weird-matter-lab/catalog	1	MIT	engineering-approved	automated-content-gate	2026-08-27
+LAB-OG-001	image	project-generated://imagegen/weird-matter-social-card	1	PROJECT-GENERATED	engineering-approved	visual-qa	2026-08-27
