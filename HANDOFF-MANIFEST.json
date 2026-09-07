@@ -8,6 +8,11 @@
   "generatedAt": "2026-09-04T00:00:00.000Z",
   "files": [
     {
+      "path": ".gitignore",
+      "bytes": 106,
+      "sha256": "820a5ce0827a1c8be684fc346b46809d515bfc1df49f19bc5ed4524583b2e22c"
+    },
+    {
       "path": "apps/weird-matter-lab/ARCHITECTURE.md",
       "bytes": 814,
       "sha256": "fd9c2f07323b054708a2220100473e558bd2076f2297c33e4d3f28b4bb6c0630"
