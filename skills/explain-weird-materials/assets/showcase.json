@@ -1,0 +1,17 @@
+{
+  "contractVersion": 1,
+  "skill": "explain-weird-materials",
+  "app": "weird-matter-lab",
+  "package": "@eazo/weird-matter-lab",
+  "port": 5105,
+  "title": "Weird Matter Lab",
+  "domain": "Explain counterintuitive material responses through safe interactive observation.",
+  "scenario": "Enter the lab, choose a supported specimen, apply its on-screen stimulus, and explain the visible response.",
+  "viewport": { "width": 390, "height": 844 },
+  "steps": [
+    "Press Enter the Lab and choose a supported specimen.",
+    "Use the specimen's on-screen control to apply a stimulus and observe immediate feedback.",
+    "Reach the experiment result, explain the response, and reset or select another specimen."
+  ],
+  "evidence": ["A completed safe specimen interaction with an observation, explanation, and reachable reset path."]
+}

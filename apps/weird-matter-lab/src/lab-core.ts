@@ -6,7 +6,7 @@ export const ENGINE_VERSION = 'matter-ts-1.0.0';
 export const CONTENT_VERSION = 'content-1.0.0';
 export const SAVE_VERSION = 1;
 
-export type LabCommand = { type: 'paint' | 'erase'; materialId?: string; x: number; y: number; radius?: number };
+export type LabCommand = { type: 'paint' | 'erase' | 'stir'; materialId?: string; x: number; y: number; radius?: number };
 export type ReactionEvent = { reactionId: string; x: number; y: number };
 export type WorldSummary = {
   tick: number; activeCellCount: number; worldChecksum: string; renderBufferChecksum: string;
@@ -30,12 +30,12 @@ export class SeededRandom {
   next() { let value = this.#state; value ^= value << 13; value ^= value >>> 17; value ^= value << 5; this.#state = value >>> 0; return this.#state / 4294967296; }
 }
 
-const prioritizedReactions = [
-  { priority: 100, a: 'food-gel', b: 'microbe', product: 'game-stink', id: 'reaction-friendly-ferment' },
-  { priority: 90, a: 'bubble-liquid', b: 'dye-pink', product: 'rainbow-foam', id: 'reaction-rainbow-foam' },
-  { priority: 80, a: 'wire', b: 'sound-pulse', product: 'music-particle', id: 'reaction-wire-song' },
-  { priority: 70, a: 'portal-dust', b: 'sound-pulse', product: 'music-particle', id: 'reaction-portal-song' },
-  { priority: 60, a: 'seed', b: 'water', product: 'hair-fiber', id: 'reaction-fiber-grow' },
+export const REACTION_RULES = [
+  { priority: 100, a: 'food-gel', b: 'microbe', product: 'game-stink', id: 'reaction-friendly-ferment', title: 'Polite Puff', prompt: 'A tiny microbe turns lunch into a cartoon cloud.' },
+  { priority: 90, a: 'bubble-liquid', b: 'dye-pink', product: 'rainbow-foam', id: 'reaction-rainbow-foam', title: 'Foam Bloom', prompt: 'Color catches inside bubbles and grows a bright edge.' },
+  { priority: 80, a: 'wire', b: 'sound-pulse', product: 'music-particle', id: 'reaction-wire-song', title: 'Wire Song', prompt: 'A pulse finds a path and leaves a visible note behind.' },
+  { priority: 70, a: 'portal-dust', b: 'sound-pulse', product: 'music-particle', id: 'reaction-portal-song', title: 'Portal Echo', prompt: 'A fictional doorway bends one pulse into another.' },
+  { priority: 60, a: 'seed', b: 'water', product: 'hair-fiber', id: 'reaction-fiber-grow', title: 'Wild Hair', prompt: 'A wet seed answers by growing an impossible fiber.' },
 ] as const;
 
 export class DeterministicWorld {
@@ -52,6 +52,16 @@ export class DeterministicWorld {
 
   apply(command: LabCommand) {
     const radius = Math.max(1, Math.min(command.radius ?? 2, 8));
+    if (command.type === 'stir') {
+      const source = this.cells.slice();
+      for (let oy = -radius; oy <= radius; oy += 1) for (let ox = -radius; ox <= radius; ox += 1) {
+        if (ox * ox + oy * oy > radius * radius) continue;
+        const sourceX = command.x + ox, sourceY = command.y + oy, targetX = command.x - oy, targetY = command.y + ox;
+        if (sourceX < 0 || sourceX >= this.width || sourceY < 0 || sourceY >= this.height || targetX < 0 || targetX >= this.width || targetY < 0 || targetY >= this.height) continue;
+        this.cells[targetY * this.width + targetX] = source[sourceY * this.width + sourceX] ?? 0;
+      }
+      return;
+    }
     const value = command.type === 'erase' ? 0 : idOf(command.materialId ?? 'sand');
     for (let oy = -radius; oy <= radius; oy += 1) for (let ox = -radius; ox <= radius; ox += 1) {
       if (ox * ox + oy * oy > radius * radius) continue;
@@ -84,7 +94,7 @@ export class DeterministicWorld {
         }
         const neighborIndex = x + 1 < this.width ? index + 1 : index;
         const neighbor = this.cells[neighborIndex] ?? 0;
-        for (const reaction of prioritizedReactions) {
+        for (const reaction of REACTION_RULES) {
           const a = idOf(reaction.a); const b = idOf(reaction.b);
           if ((value === a && neighbor === b) || (value === b && neighbor === a)) {
             next[index] = idOf(reaction.product); next[neighborIndex] = 0;
@@ -111,7 +121,7 @@ export class DeterministicWorld {
   restore(snapshot: Uint8Array, tick: number) { if (snapshot.length !== this.cells.length) throw new Error('INVALID_GRID'); this.cells.set(snapshot); this.tick = tick; }
 }
 
-export const resolveReactionConflict = (a: string, b: string) => prioritizedReactions.find((rule) => (rule.a === a && rule.b === b) || (rule.a === b && rule.b === a));
+export const resolveReactionConflict = (a: string, b: string) => REACTION_RULES.find((rule) => (rule.a === a && rule.b === b) || (rule.a === b && rule.b === a));
 export const evaluateGoal = (challenge: Challenge, summary: Pick<WorldSummary, 'counts' | 'reactions'>) => ({
   completed: (summary.counts[challenge.goal.materialId] ?? 0) >= challenge.goal.count,
   reactionIds: summary.reactions.map((reaction) => reaction.reactionId),

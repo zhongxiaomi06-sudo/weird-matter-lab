@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { CHALLENGES, MATERIALS, SCENES, TOOLS } from './content';
-import { AtomicMemoryStore, DeterministicWorld, ENGINE_VERSION, GRID_HEIGHT, GRID_WIDTH, QualityGovernor, evaluateGoal, makeSave, resolveReactionConflict, sanitizeRemix, validateSave, type LabCommand } from './lab-core';
+import { AtomicMemoryStore, DeterministicWorld, ENGINE_VERSION, GRID_HEIGHT, GRID_WIDTH, QualityGovernor, REACTION_RULES, evaluateGoal, makeSave, resolveReactionConflict, sanitizeRemix, validateSave, type LabCommand } from './lab-core';
 
 const hashJson = (value: unknown) => { let hash = 2166136261; for (const byte of new TextEncoder().encode(JSON.stringify(value))) hash = Math.imul(hash ^ byte, 16777619); return (hash >>> 0).toString(16).padStart(8, '0'); };
 
@@ -23,6 +23,7 @@ describe('Weird Matter Lab production contracts', () => {
 
   it('TEST-LAB-004 resolves competing reactions by explicit priority', () => {
     const rule = resolveReactionConflict('food-gel', 'microbe'); expect(rule?.priority).toBe(100); expect(rule?.product).toBe('game-stink');
+    expect(REACTION_RULES).toHaveLength(5); expect(new Set(REACTION_RULES.map((item) => item.id)).size).toBe(5);
   });
 
   it('TEST-LAB-005 accepts a state-based non-example solution', () => {
@@ -55,6 +56,18 @@ describe('Weird Matter Lab production contracts', () => {
 
   it('TEST-LAB-012 keeps every launch action available without camera permission', () => {
     const requiredTouchActions = ['paint','erase','pause','step','undo','redo','save','share']; expect(requiredTouchActions).not.toContain('camera'); expect(requiredTouchActions).toHaveLength(8);
+  });
+
+  it('TEST-LAB-013 stirs existing matter without creating or deleting cells', () => {
+    const world = new DeterministicWorld(16, 16, 5);
+    world.apply({ type: 'paint', materialId: 'glass', x: 7, y: 5, radius: 1 });
+    world.apply({ type: 'paint', materialId: 'copper', x: 10, y: 8, radius: 1 });
+    const before = world.summary();
+    world.apply({ type: 'stir', x: 8, y: 8, radius: 5 });
+    const after = world.summary();
+    expect(after.worldChecksum).not.toBe(before.worldChecksum);
+    expect(after.activeCellCount).toBe(before.activeCellCount);
+    expect(after.counts).toEqual(before.counts);
   });
 
   it('accepts only a checksummed, whitelisted Remix package', () => {

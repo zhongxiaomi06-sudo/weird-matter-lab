@@ -1,0 +1,4 @@
+interface:
+  display_name: "Explain Weird Materials"
+  short_description: "Learn matter by making it misbehave"
+  default_prompt: "Use $explain-weird-materials to explain a strange material and demonstrate it in Weird Matter Lab."

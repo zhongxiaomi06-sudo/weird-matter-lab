@@ -33,8 +33,8 @@
     },
     {
       "path": "rights-ledger.tsv",
-      "sha256": "3cd39749545159e5d5e3f226931635b5c40923c53abccdea23f5160652f33a0b",
-      "bytes": 1401,
+      "sha256": "91e6e839f91d74783669f912738b9314c6d2ed6ccb71ab54ea02cddefaf7f0de",
+      "bytes": 1740,
       "contentType": "text/tab-separated-values",
       "licenseId": "LEDGER",
       "sourceIds": [
@@ -123,5 +123,5 @@
       "outputSha256": "5790b655a5b73f46ab24cc68cfa63a3849ff52eb3b754d315cac1cb9dcff72e5"
     }
   ],
-  "totalBytes": 3658471
+  "totalBytes": 3658810
 }

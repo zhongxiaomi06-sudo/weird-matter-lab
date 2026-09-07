@@ -1,0 +1,841 @@
+{
+  "version": 1,
+  "state": "BUILDING",
+  "app": "weird-matter-lab",
+  "package": "@eazo/weird-matter-lab",
+  "port": 5105,
+  "skill": "explain-weird-materials",
+  "generatedAt": "2026-09-04T00:00:00.000Z",
+  "files": [
+    {
+      "path": "apps/weird-matter-lab/ARCHITECTURE.md",
+      "bytes": 814,
+      "sha256": "fd9c2f07323b054708a2220100473e558bd2076f2297c33e4d3f28b4bb6c0630"
+    },
+    {
+      "path": "apps/weird-matter-lab/content/catalog.json",
+      "bytes": 42233,
+      "sha256": "5790b655a5b73f46ab24cc68cfa63a3849ff52eb3b754d315cac1cb9dcff72e5"
+    },
+    {
+      "path": "apps/weird-matter-lab/content/data-manifest.json",
+      "bytes": 3705,
+      "sha256": "347d4596cd9d5575d4a0576f0b9ff8f10451d1260cd49f896963a5ef190578e6"
+    },
+    {
+      "path": "apps/weird-matter-lab/content/fixture.json",
+      "bytes": 385,
+      "sha256": "9919a562aa999ba3285b9f82a4541c5a71e2b3d1b656e9ff7f16316983698c71"
+    },
+    {
+      "path": "apps/weird-matter-lab/content/matter-specimens-v2.png",
+      "bytes": 1566179,
+      "sha256": "4bc2bb615c93f44d3f002f47a6d5cce84f9499a56fab14afe8a78f8b0317bda2"
+    },
+    {
+      "path": "apps/weird-matter-lab/content/matter-specimens-v2.webp",
+      "bytes": 303870,
+      "sha256": "183c45208c0f698d8d7247095fd1af1414f7e7ddd29778ceda085d9e8d11580e"
+    },
+    {
+      "path": "apps/weird-matter-lab/content/og.png",
+      "bytes": 923056,
+      "sha256": "8083ff146bfe151dee2224d25b465813a8a6d4aa13e2e71d8ed275faa005de9c"
+    },
+    {
+      "path": "apps/weird-matter-lab/content/reels/ink-collision.mp4",
+      "bytes": 160929,
+      "sha256": "96650699ae3dfa6b3c0a1b8b38218b5089364ff521dbbf0eafb1681e83620f36"
+    },
+    {
+      "path": "apps/weird-matter-lab/content/reels/liquid-vortex.mp4",
+      "bytes": 397680,
+      "sha256": "7c36fbf4d9b00e3d0cc14b6ded6dded325abd48458bfe66568b76414e8f8270a"
+    },
+    {
+      "path": "apps/weird-matter-lab/content/reels/magnetic-bloom.mp4",
+      "bytes": 262019,
+      "sha256": "d3b4f57c6ae9aed8856f7ce7432e81a9a46d3dadf00cd6f8bb49eae119e9bcff"
+    },
+    {
+      "path": "apps/weird-matter-lab/content/rights-ledger.tsv",
+      "bytes": 1740,
+      "sha256": "91e6e839f91d74783669f912738b9314c6d2ed6ccb71ab54ea02cddefaf7f0de"
+    },
+    {
+      "path": "apps/weird-matter-lab/content/sw.js",
+      "bytes": 719,
+      "sha256": "3e37872b8212cb89404199ea622c88cf00367e1d81077a3291caac8db851e10c"
+    },
+    {
+      "path": "apps/weird-matter-lab/CONTENT.md",
+      "bytes": 729,
+      "sha256": "df6c270d6f283453ca5c61a3d51aef22b7dba615276bac96b3708320bc2d20ea"
+    },
+    {
+      "path": "apps/weird-matter-lab/DESIGN.md",
+      "bytes": 889,
+      "sha256": "c779b91d9078263dbb90feb687b0c62aafedeca464e4fb424959bbc7e51b1cb5"
+    },
+    {
+      "path": "apps/weird-matter-lab/development-input.json",
+      "bytes": 293,
+      "sha256": "70679cca82151639b9a584a783aabfcb4dfb478bb68074a8739c7f4163354de7"
+    },
+    {
+      "path": "apps/weird-matter-lab/eazo.manifest.json",
+      "bytes": 918,
+      "sha256": "3246091bccc4aa1fcb3ed18b643ba65a3b882b0a030ff823d6a1badb5ce7eba9"
+    },
+    {
+      "path": "apps/weird-matter-lab/index.html",
+      "bytes": 792,
+      "sha256": "2498933e386e8eb03db7c3cb812a4646cb8cb3514c6277aa0847bb92fd707f58"
+    },
+    {
+      "path": "apps/weird-matter-lab/package.json",
+      "bytes": 420,
+      "sha256": "71088a8e292af47818dd3697015e134276a01a465b6ed8afc55c4b85ee7fa2a9"
+    },
+    {
+      "path": "apps/weird-matter-lab/PRODUCT.md",
+      "bytes": 780,
+      "sha256": "4a3f9918199290e3cc988e7cbcc6da55ce1ee39516fb56f34ee0977562a5399b"
+    },
+    {
+      "path": "apps/weird-matter-lab/README.md",
+      "bytes": 1010,
+      "sha256": "84b294179884e97d778d1fac5221dc8fc61c31471a816b122cc75ca04e008199"
+    },
+    {
+      "path": "apps/weird-matter-lab/RELEASE.md",
+      "bytes": 629,
+      "sha256": "4d8b3995e8d93ec7016b662e0a44338af54e8e1985968f6d2b158de897af5db4"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/App.tsx",
+      "bytes": 32553,
+      "sha256": "92e6dda667bc94379c76042e8d93178cca00291ca09a7fe53e9dec9071887eec"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/matter-specimens-v2.webp",
+      "bytes": 303870,
+      "sha256": "183c45208c0f698d8d7247095fd1af1414f7e7ddd29778ceda085d9e8d11580e"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/reels/ink-collision.mp4",
+      "bytes": 160929,
+      "sha256": "96650699ae3dfa6b3c0a1b8b38218b5089364ff521dbbf0eafb1681e83620f36"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/reels/liquid-vortex.mp4",
+      "bytes": 397680,
+      "sha256": "7c36fbf4d9b00e3d0cc14b6ded6dded325abd48458bfe66568b76414e8f8270a"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/reels/magnetic-bloom.mp4",
+      "bytes": 262019,
+      "sha256": "d3b4f57c6ae9aed8856f7ce7432e81a9a46d3dadf00cd6f8bb49eae119e9bcff"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens/hero-cluster.webp",
+      "bytes": 76522,
+      "sha256": "6c546d7243b41aafec0ff02131eab4c8a542334a4a46b6b9b7a4be1055b5bf64"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens/hero-field.webp",
+      "bytes": 116744,
+      "sha256": "b59d4997564603200b7a1776c5eb56a84dfa9d233720e9259cc10c8672822346"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens/home-cover.webp",
+      "bytes": 116744,
+      "sha256": "b59d4997564603200b7a1776c5eb56a84dfa9d233720e9259cc10c8672822346"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/acid-abstract.webp",
+      "bytes": 9222,
+      "sha256": "edce777f5952cde0b71d75cbe69a0142153b53ef7c724501d410d998cddcc20a"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/air.webp",
+      "bytes": 3588,
+      "sha256": "993d98af0ef64d24d2d6eb39541641409b0c9f823f8269881e07c76900fe0e8e"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/aluminum.webp",
+      "bytes": 7604,
+      "sha256": "3f98d8962c212165c0b61812ea98d19589c9f7a277cd20d49c7d857c724be37c"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/antigravity-gel.webp",
+      "bytes": 4764,
+      "sha256": "eacae8a07e4cc275ec5dfe379e4448e7e1f50ffda94ef25456aefa31887a3be7"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/base-abstract.webp",
+      "bytes": 8928,
+      "sha256": "40bda19b932f5f3b2fb8f03fc08532c11b4315f4115c94b60fb02ffa857ee7de"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/battery.webp",
+      "bytes": 5776,
+      "sha256": "92576eee1aace2b46eb14560bf70f32df774392db735e67794b9a2a1c7c07d79"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/bubble-liquid.webp",
+      "bytes": 6810,
+      "sha256": "e7955dd716f864361c2c81bd6e802c4616f90e1492d1d1f2121d6ea4bde2aff7"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/carbon-dioxide.webp",
+      "bytes": 5876,
+      "sha256": "29a5d937860d1d46b56d048940598767eadd897de807bfc14a33455d22dfe1d6"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/catalyst.webp",
+      "bytes": 5170,
+      "sha256": "f92d3e85387641b2b5b6df1c7aa9d45a9e7d02edda391eeb6240e5231b487796"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/ceramic.webp",
+      "bytes": 6710,
+      "sha256": "014a9d3bae718c2b0e74496f29336848821ce49b25bcc445c10b1ff6af1a6eed"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/chalk.webp",
+      "bytes": 6114,
+      "sha256": "218ac1f29e66aa483aaa285318487e3c76063908866d5fb63710b6e81b4755b1"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/charcoal.webp",
+      "bytes": 10104,
+      "sha256": "927c86563af998511343a018f929fe195b8986fea144f30ef9cb78fb9b181f0f"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/clay.webp",
+      "bytes": 6194,
+      "sha256": "5e6e3e8063a00ec794dc96a6805598dd1746ae3f2091b1621120c35260c08b44"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/cold.webp",
+      "bytes": 6890,
+      "sha256": "609b15661d835a67c9ce15206948845d4aa1eb3af43835db202176a6a9811c89"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/compost.webp",
+      "bytes": 11950,
+      "sha256": "9632637071a60a89e2e0f83b9c43b7982eb12253c024a4cad170f97db1e7b997"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/coolant.webp",
+      "bytes": 3874,
+      "sha256": "e5b156f52efc96f4f444bf078b2e880eebdfc047c388e9ed5de185ccff983fa4"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/copper.webp",
+      "bytes": 7122,
+      "sha256": "d7debc117003d3b91bfd225fd840ae97fbfc9bd16ccc592889cd7644136dc54a"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/cork.webp",
+      "bytes": 5360,
+      "sha256": "3f77cc1ddb1b15f3b664302accded5f4686c460887853a19647770f9bc6a640f"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/crystal.webp",
+      "bytes": 11696,
+      "sha256": "3c7a3f4bafee9d4fd69ec4eb2728f4508f11b364404b6dd92f930a5643722d2d"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/dye-cyan.webp",
+      "bytes": 4348,
+      "sha256": "67556ee811601bdae4dd83c03f8fc86a2d8febffc0b90a1ceeae458e8e3fc34f"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/dye-pink.webp",
+      "bytes": 4626,
+      "sha256": "dd691d57057877a494f565a60c4ad3afc7b07bcda830dc070519a364c01ee946"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/electricity.webp",
+      "bytes": 5034,
+      "sha256": "7fff28d1b720d4aec854b7695944b548a7643c18c1cc49011faa96ac8d595c60"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/fiber.webp",
+      "bytes": 7040,
+      "sha256": "397342cf99482b0aa7a25b22209222f5bb3c92f9b28f07b4d1145204e2959187"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/fog.webp",
+      "bytes": 5700,
+      "sha256": "0fcd928ea63b4d2f2da634dce8fec537e9fb45d021f532a7eda71970b0608c03"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/food-gel.webp",
+      "bytes": 5468,
+      "sha256": "4c877aaa9eb29edfa3fcb6d294bb556c13af359de048e42998b38c60e5aae82a"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/game-stink.webp",
+      "bytes": 8120,
+      "sha256": "567386da72e340820570feefa8cf31cefd96c9fc678bba1893d080f161711ac1"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/giggle-gas.webp",
+      "bytes": 9428,
+      "sha256": "b94dc87af6d7250e26700097b20acca2ab86ba7305ca5c3ff5e0d99a44f64173"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/glass.webp",
+      "bytes": 9538,
+      "sha256": "27cc28a27ba5ead30a10e9d770d5ca68b7c289865f65152145984399a6029ad9"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/graphite.webp",
+      "bytes": 8396,
+      "sha256": "35cba8a79a3bb772100414e11072ce3408065f00901dae4499a00c5474f66a26"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/hair-fiber.webp",
+      "bytes": 11080,
+      "sha256": "70d10a80bcfaf0790de4a267265b5c27961fd73dc52de8c83b0109be6c06bc7d"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/heat.webp",
+      "bytes": 7284,
+      "sha256": "291e17c564bd6406cb97cdb54a75dafa0a4db11b37b820aa1ddb7752d7e5de4c"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/heater-coil.webp",
+      "bytes": 10244,
+      "sha256": "d42ea4742eec29288a431551bf9791340c4a9c224eb43f949c7edf0e09a91be4"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/helium.webp",
+      "bytes": 3924,
+      "sha256": "bfbf5cb9743bffd25a6af4021d3eb996a58bc48c3893c2d9df958cf075031659"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/ice.webp",
+      "bytes": 4520,
+      "sha256": "c3680af792fe7d4e9da8ce099c6e77df42dadcfb9d898f6bd544c3b96cd29ee8"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/ink.webp",
+      "bytes": 4798,
+      "sha256": "e179e69e147d5dcca7f6727b2519f9ae83acec5a86b4cf0a5a04fcbf51ad537c"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/iron.webp",
+      "bytes": 6700,
+      "sha256": "f869e0e1cee5c186a5ae7dd92dc959775866bc9ba9baeddcfb1e975f5b24bdd6"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/lava.webp",
+      "bytes": 6792,
+      "sha256": "92b1e91fd8b887e6bbd80af9c9a73d16c36d4df28bddf78ee56eb45f93ccfd30"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/light.webp",
+      "bytes": 3586,
+      "sha256": "3991cf8ae7db1e14d2c5b481e7f93275f3bda1b7b2695c6161bff5dc8c6916ab"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/liquid-metal.webp",
+      "bytes": 6738,
+      "sha256": "c0d87f37de13e8dc498a538d31077d5d0158601a1a3aef1c8231e913fcad8b94"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/magnet.webp",
+      "bytes": 4962,
+      "sha256": "05dd3b607865fe7ea968a8c3b01444d1fe913794bf712c04795e0107f7698a14"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/metal-mesh.webp",
+      "bytes": 9676,
+      "sha256": "7f29bf5ff1fa68a8eef0513ca3ee805065493be09938ca07a12a5d1a9778f66f"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/microbe.webp",
+      "bytes": 5070,
+      "sha256": "12012eb159e9bb0c0ec0775b456976829d96bc39fbdad5c423c5e74b27765f94"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/milk.webp",
+      "bytes": 3354,
+      "sha256": "a64fd857371ad1822fd697c7f256fc20633e3015896d83b5dcb4d380c377c43e"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/monster-goo.webp",
+      "bytes": 7792,
+      "sha256": "d5624926b76959f8754522cecce595a69c0e8fdc9c38ff05514725d09bb8de2f"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/moon-sand.webp",
+      "bytes": 6264,
+      "sha256": "29bbd65937c179d154206618555262d45ae34eb32870fc308456edb793ab4f87"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/music-air.webp",
+      "bytes": 6080,
+      "sha256": "9d72a1be36bc3a6fcb04455e09d229e46d88b0b5ab30b8ed9f506f27a529d4e6"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/music-particle.webp",
+      "bytes": 10396,
+      "sha256": "fd8e4222f40ce97775cc54acdb42b7492fac97b1d941392c16d9ac2ec3fa0b5e"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/oil.webp",
+      "bytes": 4520,
+      "sha256": "82ff3aabdf58e34a6b31c7518ba14419ac82c6a0aa271364e0e64424054fedf5"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/paper.webp",
+      "bytes": 8802,
+      "sha256": "9bce77e272a76535957650f9eb4f419115f47a0083d32b63a9cdb445354e46d4"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/plant.webp",
+      "bytes": 6576,
+      "sha256": "f009c3508b9b2cbffb35369d707a37c238c0b76d35b24716f1c2fedbf95059ff"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/portal-dust.webp",
+      "bytes": 8558,
+      "sha256": "8bcc5539b57bbc9560b24cf64f72716e527f768e5615b4e098b6dd39d636bcbd"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/pressure-pulse.webp",
+      "bytes": 5560,
+      "sha256": "bf2dd01841e4ed33b4df67cacd037ac9fce65a7a53b5e44f144bb981c52cac06"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/rainbow-foam.webp",
+      "bytes": 10502,
+      "sha256": "8ce7a7e898336ae255713c535b1a4710bc0b900e8077bba91533f39d3c9d757c"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/rubber.webp",
+      "bytes": 4216,
+      "sha256": "762cb457cfb5f88a68204297f480c06cd3c7f0ade34df1b11398fd350ce482cb"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/salt.webp",
+      "bytes": 8136,
+      "sha256": "97642ee68cca0047badcb5d9ac373e5bd589e9a8c3e1633d218e796b227463e6"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/sand.webp",
+      "bytes": 7930,
+      "sha256": "c7934af09c085090f999c5e8bb4bc476ed7381620b78a9eb0d205e4ef4b621c0"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/seed.webp",
+      "bytes": 6458,
+      "sha256": "63ca442c13bfc432bd58329979335e57de7082d30bfc60d96351309e62e00936"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/silver.webp",
+      "bytes": 7324,
+      "sha256": "4bf6ef94673319fb732b324eb375a8fa7e13962492c9922e34424041c736efa9"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/slime.webp",
+      "bytes": 8282,
+      "sha256": "597b84b6baa3ac71c8e5f57dda044f0555b0c6684da9b955caf218aaabde9ac5"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/smoke.webp",
+      "bytes": 9230,
+      "sha256": "d858c29721fd3a5b053f009345df3d7fc813845820e8bc3a6e4c5b55e26221e2"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/sound-pulse.webp",
+      "bytes": 5086,
+      "sha256": "90c6ceca9462a443e576c25c3df679f1749d7eb1d12f27e55c3cdb9fb6434e33"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/spark.webp",
+      "bytes": 7882,
+      "sha256": "0935e0a92cc2c3856ecf7d84db83b3120cbdd4ba2775cf5eccdc52d7b4417da2"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/sponge.webp",
+      "bytes": 7422,
+      "sha256": "fb7db6dab05ca100b49bc9d067f549acd195993a1492d17e708d39c6a7e54959"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/steam.webp",
+      "bytes": 6130,
+      "sha256": "60ed426d3cc3601951679b0eccbe5ca7ff2a65e732b42f247fa7e7b26e09f2c9"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/steel.webp",
+      "bytes": 5300,
+      "sha256": "1fc568a44b1276d10fc73faedd750e849e277bd8a6340c1a625389c83893c45e"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/stone.webp",
+      "bytes": 7580,
+      "sha256": "fe705d604c3ce9ebe2f255cee3c7b01450228c40537f18736e7c84e2de8f48f7"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/syrup.webp",
+      "bytes": 5518,
+      "sha256": "4fe03042f1ff990d34ceebe3a2058c93346e10bc765f0773b23ed36ec460f89d"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/time-crystal.webp",
+      "bytes": 8498,
+      "sha256": "51b0ae101d1f011e5ec504f324e0fc0737872f69f4bb128ed36fb3dd8e6c78ad"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/water.webp",
+      "bytes": 5448,
+      "sha256": "ee3fbeeb5d2cea920fbc5db7ecffd6a0a1b9b76b967d467adc1dc170f9b262ae"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/wax.webp",
+      "bytes": 4872,
+      "sha256": "e8f198795e6a09b89bf15f5a7982d25b8efe04c3a85b718ab4d5e34a2aaed51d"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/wire.webp",
+      "bytes": 11702,
+      "sha256": "9eaa07c68ab299d6b26fd4204d0a9d51b70a6ca0e8fa75dff20a95b35a1a5267"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/assets/specimens72/wood.webp",
+      "bytes": 8102,
+      "sha256": "ce7275db08c8c1a9f625fee0e6549d5b1edbede95909923a85782da74e59829c"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/audio.ts",
+      "bytes": 4740,
+      "sha256": "57b48bb82cb2915233239212d663302df14977020ec141c131ab8709fe600c84"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/content.ts",
+      "bytes": 18799,
+      "sha256": "e46c40d57dcb5b3f76edf558ef2b04e5794d38b6c396cb3dfc7e55bec344c967"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/eazo.ts",
+      "bytes": 506,
+      "sha256": "7bc1055e2f0ce69005108ac8b4011dd93a52036367a14ae425d373f16354da7e"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/HomeScreen.tsx",
+      "bytes": 1068,
+      "sha256": "fac226f757e1d5dc87bd54d17ecd207ac87e07948a453956fb6eeb3f70c07edb"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/lab-core.test.ts",
+      "bytes": 6341,
+      "sha256": "28c0df0a18cd4de5f81f68810b058f68d0ec6d1c5b1e5f2119bda23af6d2c5b3"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/lab-core.ts",
+      "bytes": 10463,
+      "sha256": "4b185d19b4dbc18e4f2e9488cc4f1634b1bcc4362c5e332f8025d47a7a617308"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/main.tsx",
+      "bytes": 201,
+      "sha256": "41d037f93417858999f3ad86b49c3ee10ca6457e290e8eebcf60ecc20df38ae7"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/simulation.worker.ts",
+      "bytes": 725,
+      "sha256": "c66419abcc149cea801e1c69b92ff22ae733fa938f10e68dbc4bf2089da2169c"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/specimens.ts",
+      "bytes": 927,
+      "sha256": "cf47c408776e7a3c932195d9b4d966250f5ac46c9f5edaf69e0955b56c15f9b4"
+    },
+    {
+      "path": "apps/weird-matter-lab/src/styles.css",
+      "bytes": 47153,
+      "sha256": "fc3db821b350bdff6e71f06fcafe794108d388abcecd64bbb7552409a971a62e"
+    },
+    {
+      "path": "apps/weird-matter-lab/TESTING.md",
+      "bytes": 1124,
+      "sha256": "db4210bca601e3f75dd0be320290aeed5717a4ae07060192a97208c33015bd0e"
+    },
+    {
+      "path": "apps/weird-matter-lab/tests/e2e/project.spec.ts",
+      "bytes": 768,
+      "sha256": "948c6480ef4ebf73042430ae17e4e300c8a04579e675378e2ab9b289dea2913e"
+    },
+    {
+      "path": "apps/weird-matter-lab/tsconfig.json",
+      "bytes": 93,
+      "sha256": "6756ac060ae671932cefe722e96648eaed3183c45f835cccec5a751988ef22db"
+    },
+    {
+      "path": "apps/weird-matter-lab/vite.config.ts",
+      "bytes": 359,
+      "sha256": "c8a5230b878484debb4527ff79dcbcb52f11d2276735775859ff4e4fd03ceba2"
+    },
+    {
+      "path": "config/eazo-sdk-browser-shims.ts",
+      "bytes": 1768,
+      "sha256": "b137815f6ba411790bc3aa1e28508e31cdad86f4e6bb443925fcedb92f1c4cd0"
+    },
+    {
+      "path": "docs/standards/ASSET-SOURCES.md",
+      "bytes": 4126,
+      "sha256": "ac470b18df90934fadc4b051421ac83640d118c6a514c9753e9d82ef6d74b506"
+    },
+    {
+      "path": "docs/standards/COMPONENTS.md",
+      "bytes": 1037,
+      "sha256": "f31750c8139186b8056a4e432b50f08a9769c2908a626b37f7d08133aea533a5"
+    },
+    {
+      "path": "docs/standards/DESIGN.md",
+      "bytes": 2430,
+      "sha256": "5dc285b66e2b006af025c02e1fea846c8caf9b85cee9bfb21a7e55b96232ca7e"
+    },
+    {
+      "path": "docs/standards/DOCUMENTATION.md",
+      "bytes": 860,
+      "sha256": "0573f986c1b5e7dd84c1ec705b7e65f3833d4b2f9c82cfa375170678eea0ca58"
+    },
+    {
+      "path": "docs/standards/EAZO-HANDOFF.md",
+      "bytes": 601,
+      "sha256": "67411a26ee69c4ee0088ed1cea1224d955347d35d6d769416586b55377315ab7"
+    },
+    {
+      "path": "docs/standards/INHOUSE-QUALITY.md",
+      "bytes": 1754,
+      "sha256": "8bc62d8ea28ada36c07e84642d8e94d3c3cca8b37bf16d63fbadeb5b5ace2fc9"
+    },
+    {
+      "path": "docs/standards/MOBILE.md",
+      "bytes": 1509,
+      "sha256": "8dadf24c5fad596581ebbe1dcfcc2338649b1e759c8ebfa7888c5d30f7c17a82"
+    },
+    {
+      "path": "docs/standards/OWNER-PREFERENCES.md",
+      "bytes": 3277,
+      "sha256": "8c0d0f459935e92f32d19a566069570e8e784afce9b88717d5bca278c7083ea3"
+    },
+    {
+      "path": "docs/standards/WORKFLOW.md",
+      "bytes": 1183,
+      "sha256": "a53c2e7a1cd9724e6f5b28c6585eaab213d4133329f97ca2cb714f9513a07545"
+    },
+    {
+      "path": "HANDOFF-STATUS.md",
+      "bytes": 560,
+      "sha256": "156fd9e33ed5cb6ede4990319dd54d5dc3c8920bea81f4d122563def6e605ede"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1086,
+      "sha256": "c1e9d58176c0bfcd1b6070c01f47dfeff53ba3e94fd33e1b3740b326953fe71c"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1227,
+      "sha256": "133bf1f3c3480bc5191334c4d2faf5fb81fc08d967f5945d141668254a0c4204"
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "bytes": 281,
+      "sha256": "91e856548e2fb889d59e89883b0d9f2ffacef975dfea9a65825e4a10ede6dae5"
+    },
+    {
+      "path": "packages/contracts/src/flags.ts",
+      "bytes": 488,
+      "sha256": "d3aebc9fcd510cfae5129c677768728fce3a855e383feb938cec9a65863d093c"
+    },
+    {
+      "path": "packages/contracts/src/host.ts",
+      "bytes": 2685,
+      "sha256": "ff385dac6accbc1e769b86607d682e63d8f90e0d5014ee4fb8c60713f638df0f"
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "bytes": 108,
+      "sha256": "69afaedb243b29310a7659c67ac8d4cafd0e1115995bde7260c8450b826b1412"
+    },
+    {
+      "path": "packages/contracts/src/manifest.ts",
+      "bytes": 958,
+      "sha256": "f81851835841509461ac9cf08fbd9c96112c1898c65a85d041f7ca67acddd50f"
+    },
+    {
+      "path": "packages/contracts/src/test-result.ts",
+      "bytes": 559,
+      "sha256": "2e00572afcbe6ce24ad638cee442c99ce25cc38d3537b60981604c8568591999"
+    },
+    {
+      "path": "packages/contracts/tsconfig.json",
+      "bytes": 66,
+      "sha256": "8f6e85eeaa8025fe7b2f01763e03f32540d3e2869ae857490d685098460f4e3a"
+    },
+    {
+      "path": "packages/platform/package.json",
+      "bytes": 385,
+      "sha256": "7af6fe1429ebf7c4681ac87b81a20f58bae7565712637b1973d5c918e89ff62b"
+    },
+    {
+      "path": "packages/platform/src/adapters.ts",
+      "bytes": 7499,
+      "sha256": "09af8fd46e0f8125f969a18331c6b66891ee579a1329d496c76b1e755dc78b01"
+    },
+    {
+      "path": "packages/platform/src/atomic-cache.ts",
+      "bytes": 715,
+      "sha256": "4e309f8ee556b98d52ff6d4aa1dfe4ff9be03e5829b86161e5ea96fc190204f6"
+    },
+    {
+      "path": "packages/platform/src/flags.ts",
+      "bytes": 1330,
+      "sha256": "b5a9daafbb53db4fb6f7f834deb11ad8a27595a7c01ab5ea79f1babe9f92e8f8"
+    },
+    {
+      "path": "packages/platform/src/index.ts",
+      "bytes": 123,
+      "sha256": "1e00b9e33d8a134bb2407c805f959b17ee9132d90f71e20b27d37094a784f3b5"
+    },
+    {
+      "path": "packages/platform/src/manifest-validator.ts",
+      "bytes": 974,
+      "sha256": "adb10964949eabde5c992bf2a6b961f712488aaf2bf5f3656228900c24284542"
+    },
+    {
+      "path": "packages/platform/src/platform.test.ts",
+      "bytes": 7147,
+      "sha256": "a6d4f9dfb0ba1dc68a7e60966e8e833b3f62fd19de83557e9c7fe8ee3d678701"
+    },
+    {
+      "path": "packages/platform/tsconfig.json",
+      "bytes": 66,
+      "sha256": "8f6e85eeaa8025fe7b2f01763e03f32540d3e2869ae857490d685098460f4e3a"
+    },
+    {
+      "path": "packages/ui/package.json",
+      "bytes": 469,
+      "sha256": "1f6627e76b50443065e4c519140b00a85dd7fe4fa68bc545df1eecf8d0ab0adb"
+    },
+    {
+      "path": "packages/ui/src/audio.test.ts",
+      "bytes": 3605,
+      "sha256": "ab46cab74e088e1f6487bb68726d1d22ff0d2048ab59fca238b52774e03313ab"
+    },
+    {
+      "path": "packages/ui/src/audio.ts",
+      "bytes": 2871,
+      "sha256": "c802e4c47094746e2f3e83679778bbd0cf32ed2fee236ba4ffc20b67e33aa2d1"
+    },
+    {
+      "path": "packages/ui/src/device.test.ts",
+      "bytes": 2905,
+      "sha256": "dcc78a7324ee4264d598ad0a3b4246496d0c78849001f57aeef2b518f5140b7a"
+    },
+    {
+      "path": "packages/ui/src/device.ts",
+      "bytes": 1199,
+      "sha256": "8469d7ef420f0c7c6d07be2688953f88c871e37603d2598fbc6343caf57c0cbf"
+    },
+    {
+      "path": "packages/ui/src/ExperienceShell.tsx",
+      "bytes": 1284,
+      "sha256": "8eaae5210678fb1016f61772f416f2fa2a7e4da7e19bcbcf1f00b7e35eef9dfd"
+    },
+    {
+      "path": "packages/ui/src/index.ts",
+      "bytes": 152,
+      "sha256": "4a139637c93ba2b17a40fbd1532e51706b25408095dc0fa02a287e8b9b0a25d5"
+    },
+    {
+      "path": "packages/ui/src/MobilePrimitives.tsx",
+      "bytes": 2078,
+      "sha256": "cc184b309ec78345b026cbd09ac110bc8165596ee86f06f9ecb20aaaa9a12edc"
+    },
+    {
+      "path": "packages/ui/src/ResultCard.tsx",
+      "bytes": 773,
+      "sha256": "36d7a3284e2436f03d7e38cfe9790a3e2c3e8cb079e3cae270a7df8ee89cf932"
+    },
+    {
+      "path": "packages/ui/src/styles.css",
+      "bytes": 4389,
+      "sha256": "c14dddb0ebbc31e282df19cd4d872a396e3e227b48049004ef7f8d0eeb8de944"
+    },
+    {
+      "path": "packages/ui/tsconfig.json",
+      "bytes": 66,
+      "sha256": "8f6e85eeaa8025fe7b2f01763e03f32540d3e2869ae857490d685098460f4e3a"
+    },
+    {
+      "path": "playwright.config.ts",
+      "bytes": 981,
+      "sha256": "b224d846f767c56aba6acd39e6c35cce514ab26220248121e9e644c0961d8d4f"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 90586,
+      "sha256": "81aff718f0261a4244eae975336d7cb68253b822f67cd92db672db16a5f437a1"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 137,
+      "sha256": "19669c97b8b99868afef6734bcd6d9b45706aaf7eff0c2d9ea3ce6086bb09462"
+    },
+    {
+      "path": "README.md",
+      "bytes": 690,
+      "sha256": "5015fc362e423e7b5722761d5a7453c5ad4855b028207ba7ad738d3a8ba59396"
+    },
+    {
+      "path": "scripts/validate-package.mjs",
+      "bytes": 1261,
+      "sha256": "edc098aca4d9aad034372151d640437948c2d62e543b8a775b533f7840215bb6"
+    },
+    {
+      "path": "skills/explain-weird-materials/agents/openai.yaml",
+      "bytes": 231,
+      "sha256": "f9675cbfe2c7b620b5bda7d0e08dca1da44ef163f105915991cd2bc81c53c201"
+    },
+    {
+      "path": "skills/explain-weird-materials/assets/showcase.json",
+      "bytes": 835,
+      "sha256": "6b85cfc007422d18029f96faae97cda2a434be86eeadc81b9b6c6597bb54aa5c"
+    },
+    {
+      "path": "skills/explain-weird-materials/scripts/showcase.mjs",
+      "bytes": 928,
+      "sha256": "6c0ee4e496a208720bc4b0ac441cffaf3a994380fba3fe5d676a0ad2018d9690"
+    },
+    {
+      "path": "skills/explain-weird-materials/SKILL.md",
+      "bytes": 1031,
+      "sha256": "d2c56ef30e4cac51cbad1559b95cdfc06d72c6221633256cf2ae8eb92cd1c795"
+    },
+    {
+      "path": "tests/e2e/support.ts",
+      "bytes": 2039,
+      "sha256": "396010d9059d024c846bc0276c17f015b72a1c9ee09b1e5bf493df3515749a42"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "bytes": 616,
+      "sha256": "a0100d2f3c18f32db2cfffbe16bd3c891fdeafbfc2262bf22f9be2ec8ce99101"
+    },
+    {
+      "path": "types.d.ts",
+      "bytes": 62,
+      "sha256": "78e91e6407bfc80e012efa2602f3ee2a17cd571170a206d7c5656858c2e9ab25"
+    }
+  ]
+}

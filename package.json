@@ -1,23 +1,27 @@
 {
-  "name": "eazo-weird-matter-lab",
-  "version": "1.0.0-rc.1",
+  "name": "eazo-weird-matter-lab-material-package",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "A deterministic, safety-first matter sandbox for Eazo and the open web.",
-  "license": "MIT",
-  "packageManager": "pnpm@11.24.0",
+  "packageManager": "pnpm@11.12.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhongxiaomi06-sudo/weird-matter-lab.git"
+  },
   "engines": {
     "node": ">=24.20.0 <27",
-    "pnpm": "11.24.0"
+    "pnpm": ">=11.12.0 <12"
   },
   "scripts": {
-    "build": "pnpm --filter @eazo/weird-matter-lab build",
     "dev": "pnpm --filter @eazo/weird-matter-lab dev",
+    "lint": "oxlint --ignore-pattern '**/node_modules/**' --deny-warnings apps/weird-matter-lab packages scripts",
     "typecheck": "pnpm -r --if-present typecheck",
-    "lint": "oxlint --deny-warnings packages apps",
-    "test": "vitest run",
+    "test": "vitest run apps/weird-matter-lab/src --passWithNoTests",
+    "build": "pnpm --filter @eazo/weird-matter-lab build",
     "test:e2e": "playwright test",
-    "verify": "pnpm lint && pnpm typecheck && pnpm test && pnpm build"
+    "skill:validate": "node skills/explain-weird-materials/scripts/showcase.mjs --json",
+    "integrity": "node scripts/validate-package.mjs",
+    "verify": "pnpm integrity && pnpm skill:validate && pnpm lint && pnpm typecheck && pnpm test && pnpm build"
   },
   "devDependencies": {
     "@playwright/test": "1.62.1",

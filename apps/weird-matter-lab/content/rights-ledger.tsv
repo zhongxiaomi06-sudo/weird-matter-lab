@@ -9,3 +9,5 @@ LAB-HERO-002-WEB	image	project-derived://LAB-HERO-002/webp-q86	2	PROJECT-GENERAT
 LAB-REEL-001	video	https://www.pexels.com/video/inky-16296848/	16296848	PEXELS-LICENSE	engineering-approved	Film Composite / rights-audit	2026-08-27
 LAB-REEL-002	video	https://www.pexels.com/video/a-yellow-and-black-ink-is-being-poured-into-water-18333329/	18333329	PEXELS-LICENSE	engineering-approved	Engin Akyurt / rights-audit	2026-08-27
 LAB-REEL-003	video	https://www.pexels.com/video/colors-mixing-in-the-water-7126320/	7126320	PEXELS-LICENSE	engineering-approved	Engin Akyurt / rights-audit	2026-08-27
+LAB-SPECIMEN-003	image-set	project-generated://weird-matter/specimen-jars	72-webp-v1	PROJECT-GENERATED	engineering-approved	migration-and-optimization-audit	2026-08-28
+LAB-COVER-004	image-set	project-generated://weird-matter/home-and-hero-fields	3-webp-v1	PROJECT-GENERATED	engineering-approved	migration-and-optimization-audit	2026-08-28

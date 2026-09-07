@@ -1,33 +1,28 @@
 # Weird Matter Lab
 
-Ridiculous goals. Real ideas. A mobile-first, deterministic matter sandbox for Eazo and the open web.
+一个确定性的教育型物质沙盒：用游戏材料完成挑战，并区分事实、简化模型与虚构玩法。
 
-## Product scope
+## Project contract
 
-- 72 stable materials across seven content families.
-- 12 touch-accessible tools and instruments.
-- 30 teaching challenges with three hint levels and explicit `FACT`, `SIMPLIFIED`, and `FICTIONAL` boundaries.
-- 12 free-play scenes.
-- 256×144 TypedArray simulation in a dedicated Worker, fixed 30 TPS scheduling, seeded replay checksums, pause/step, undo/redo, adaptive quality, atomic local saves, safe Remix validation, and an offline service worker.
-- Real `@eazo/sdk@0.22.8` integration for Eazo device detection and `share.compose`; local Remix export is the web/offline fallback.
+- Package: `@eazo/weird-matter-lab`
+- Local URL: <http://127.0.0.1:5105>
+- Runtime: React + TypeScript + Vite + simulation Worker
+- Locale: English (`en-US`)
+- E2E: `tests/e2e/project.spec.ts`
 
-## Run
+## Commands
 
 ```bash
-pnpm install --frozen-lockfile
-pnpm dev
-pnpm verify
+pnpm --filter @eazo/weird-matter-lab dev --host 127.0.0.1
+pnpm --filter @eazo/weird-matter-lab typecheck
+pnpm --filter @eazo/weird-matter-lab build
+pnpm exec playwright test --project=lab-chromium-mobile
 ```
 
-For an Eazo production build, copy `.env.example` to `.env` and set the App ID issued by Eazo:
+The sandbox opens without credentials. Eazo sharing is optional; local export remains the web fallback.
+Content-review, performance, physical-device and host gates are tracked in [Testing](./TESTING.md) and [Release](./RELEASE.md).
 
-```text
-VITE_EAZO_APP_ID=i_your_real_app_id
-VITE_EAZO_PLATFORM_API_BASE=https://eazo.ai
-```
+## Project documents
 
-No App ID is committed. A public repository must never contain a private Eazo key.
-
-## Release state
-
-`D2-exit / SELF_TEST candidate`. The engineering, content-shape, build, and emulated mobile gates pass. D3 remains blocked on an Eazo-issued production App ID and mobile-host acceptance run, four-tier physical-device performance evidence, named science/safety reviewer approval, and human comprehension/share-intent tests. See [AUDIT.md](./AUDIT.md).
+- [Product](./PRODUCT.md) · [Design](./DESIGN.md) · [Content](./CONTENT.md)
+- [Architecture](./ARCHITECTURE.md) · [Testing](./TESTING.md) · [Release](./RELEASE.md)
